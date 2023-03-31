@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- Навигационное меню -->
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="../index.html">Главная страница</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/articles.html">Статьи</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/catalog.html">Каталог</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="./contacts.html">Контакты</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/gallery.html">Галерея</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/page-nav.html">Навигация</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/registration.html">Регистрация</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+
+  <!-- Форма регистрации -->
+
+  <main class="main">
+    <div class="container inner">
+      <section>
+        <h1>Регистрация</h1>
+
+        <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+
+          <fieldset>
+            <div class="form-group">
+              <label for="login">Фамилия, Имя, Отчество&nbsp;</label>
+              <input class="capitalized" id="login" required name="login" placeholder="Введите логин" type="text"
+                value="UserName" minlength="3" maxlength="10">
+            </div>
+
+            <div class="form-group">
+              <label for="file">Загрузите фото&nbsp;</label>
+              <input id="file" name="file" type="file">
+            </div>
+
+            <div class="form-group">
+              <label for="email">email&nbsp;</label>
+              <input id="email" name="email" placeholder="Введите email" type="text">
+            </div>
+
+            <div class="form-group">
+              <label for="password">Пароль&nbsp;</label>
+              <input id="password" maxlength="12" minlength="3" name="password" placeholder="Введите пароль"
+                type="password">
+            </div>
+
+            <div class="form-group">
+              <label for="site">Адрес сайта&nbsp;</label>
+              <input id="site" name="site" placeholder="site" type="url" value="https://mysite.name">
+            </div>
+
+            <div class="form-group">
+              <label for="date">Дата рождения&nbsp;</label>
+              <input id="date" name="date" type="date">
+            </div>
+
+            <div class="form-group">
+              <label for="age">Возраст:</label>
+              <input id="age" name="age" min="1" max="145" value="34" placeholder="Возраст" type="number">
+            </div>
+
+            <p>Веберите пол</p>
+
+            <div class="form-group-sm">
+              <input id="gender-male" name="gender" type="radio" value="male">
+              <label for="gender-male">Мужской</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input id="gender-female" name="gender" type="radio" value="female">
+              <label for="gender-female">Женский</label>
+            </div>
+
+            <p>Выберите предпочитаемаю вами кухню</p>
+
+            <div class="form-group-sm">
+              <input checked id="ua" name="kit" type="checkbox" value="ua">
+              <label for="ua">Украинская</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input id="gr" name="kit" type="checkbox" value="gr">
+              <label for="gr">Грузинская</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input id="it" name="kit" type="checkbox" value="it">
+              <label for="it">Итальянская</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input id="md" name="kit" type="checkbox" value="md">
+              <label for="md">Молдавская</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input id="us" name="kit" type="checkbox" value="us">
+              <label for="md">Американская</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input id="jp" name="kit" type="checkbox" value="jp">
+              <label for="md">Японская</label>
+            </div>
+
+            <div class="form-group-sm">
+              <input id="ch" name="kit" type="checkbox" value="ch">
+              <label for="md">Китайская</label>
+            </div>
+
+            <div class="form-group">
+              <label for="txt">Напишите о себе</label>
+              <textarea placeholder="Введите информацию о себе" id="txt" name="txt" cols="30" rows="7"></textarea>
+            </div>
+          </fieldset>
+
+          <!-- Кнопки формы -->
+
+          <div class="btn-set">
+            <div>
+              <button type="submit" value="Регистрация">Регистрация</button>
+            </div>
+
+            <div>
+              <button type="reset" value="Сбросить">Сбросить</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="footer-text">&copy; студент Кашкаров Ярослав, 2023</div>
+  </footer>
+
+</body>
+
+</html>

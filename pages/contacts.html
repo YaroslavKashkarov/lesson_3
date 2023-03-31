@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- Навигационное меню -->
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="../index.html">Главная страница</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/articles.html">Статьи</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/catalog.html">Каталог</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="./contacts.html">Контакты</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/gallery.html">Галерея</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/page-nav.html">Навигация</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/registration.html">Регистрация</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+
+  <main class="main">
+    <div class="container inner">
+      <section>
+
+        <h1>Контакты</h1>
+
+        <!-- Адрес -->
+
+        <div>
+          <div class="center">
+            <div>
+              <h2>Украина, Николаевская область</h2>
+              <p>ул. Архитектора Старова 14В</p>
+              <p>г. Николаев</p>
+              <p>Центральный район</p>
+              <p>54047</p>
+            </div>
+
+            <div>
+              <h2>График работы</h2>
+              <p>Пн:с 10:00 до 18:00<br>
+                Вт: с 10:00 до 18:00<br>
+                Ср: с 10:00 до 18:00<br>
+                Чт: с 10:00 до 18:00<br>
+                Пт: с 10:00 до 18:00<br>
+                Сб: с 10:00 до 18:00<br>
+                Вс: Выходной<br>
+              </p>
+            </div>
+
+            <div>
+              <h2>Как нас найти</h2>
+              <iframe allowfullscreen="" height="300" loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.238489991434!2d32.00652191505019!3d47.0159235365877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5c9d9d5b8d077%3A0x80ea10db3ef90fa2!2z0YPQuy4g0JDRgNGF0LjRgtC10LrRgtC-0YDQsCDQodGC0LDRgNC-0LLQsCwgMTQsINCd0LjQutC-0LvQsNC10LIsINCd0LjQutC-0LvQsNC10LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDU0MDAw!5e0!3m2!1sru!2spl!4v1675264782361!5m2!1sru!2spl"
+                style="border:0" width="500">
+              </iframe>
+            </div>
+          </div>
+
+          <div>
+
+            <!-- Форма контакта -->
+
+            <h2 class="center">Обратная связь</h2>
+
+            <form action="https://tests.fomenko.top/echo/index.php" method="get">
+              <fieldset>
+                <div class="form-group">
+                  <label for="name">Имя</label>
+                  <input id="name" name="name" type="text" placeholder="Введите имя" autofocus>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Контактый телефон:</label>
+                  <input id="phone" name="phone" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{2}"
+                    placeholder="Ваш телефон +380-XX-XX-XXX-XX" type="tel">
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input id="email" name="email" placeholder="Ваш email" type="email">
+                </div>
+
+                <div class="form-group">
+                  <label for="text">Вопрос:</label>
+                  <textarea id="text" name="ququestion" cols="50" rows="8"
+                    placeholder="Задайте нам свой вопрос"></textarea>
+                </div>
+              </fieldset>
+
+              <div class="btn-set">
+                <div>
+                  <button type="submit">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="footer-text">&copy; студент Кашкаров Ярослав, 2023</div>
+  </footer>
+
+</body>
+
+</html>
